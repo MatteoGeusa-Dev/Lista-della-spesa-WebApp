@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<script src="script.js"></script>
+<link rel="stylesheet" href="styles.css">
+<title>Lista della Spesa</title>
+</head>
+<body>
+    <div class="container">
+        <!--<button class="addDieta" onclick="showPopup()">Aggiungi la tua dieta</button>-->
+        <button class="reset" onclick="openModal()">Cancella Lista</button>
+    </div>
+<div class="container">
+    <h2>Lista della Spesa</h2>
+    <div class="input-wrapper">
+        <input type="text" class="itemimp" id="itemInput" placeholder="Aggiungi un elemento..." onkeypress="handleKeyPress(event)">
+        <select id="categorySelect" class="centered-input">
+            <option value="Automatico" selected>Automatico</option>
+            <option value="Surgelati">Surgelati</option>
+            <option value="Vegetali">Vegetali</option>
+            <option value="Carne">Carne</option>
+            <option value="Carboidrati">Carboidrati</option>
+            <option value="Dolce">Dolce</option>
+            <option value="Latticini">Latticini</option>
+            <option value="Altro">Altro</option>
+        </select>
+    </div>
+    
+    
+    <div class="containerbutton">
+        <button class="addItem" onclick="addItem()">Aggiungi</button>
+        
+        <!--<button onclick="clearAllData()">Elimina Dati di Debug</button>-->
+    </div>
+    <ul id="itemList">
+    </ul>
+</div>
+
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <p>Sei sicuro di voler eliminare la lista?</p>
+        <div class="modal-buttons">
+            <button onclick="closeModal()">Annulla</button>
+            <button class="confirm-btn" onclick="resetList()">Conferma</button>
+        </div>
+    </div>
+</div>
+
+<div id="confirmationMessage">La lista è stata cancellata con successo!</div>
+</body>
+</html>

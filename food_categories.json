@@ -1,0 +1,11 @@
+{
+    "Surgelati": ["spinaci", "bieta", "cibo surgelato"],
+    "Vegetali": ["insalata", "rucola", "pomodori", "carota", "broccoli", "patate", "cipolla"],
+    "Carne": ["pollo", "tacchino", "manzo", "maiale", "agnello", "salsiccia", "hamburger di pollo", "hamburger"],
+    "Carboidrati": ["segale", "pane", "riso", "pasta", "farina", "avena"],
+    "Colazione": ["cereali"],
+    "Dolce": ["gelato", "torta", "ciambelle", "caramelle"],
+    "Latticini": ["latte", "formaggio", "burro", "yogurt", "uova"],
+    "Frutta": ["banane", "mele"]
+  }
+  
