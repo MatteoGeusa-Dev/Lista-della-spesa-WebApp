@@ -1,16 +1,6 @@
-function loadDieteFromStorage() {
-    var storedDiete = localStorage.getItem('dieta');
-    if (storedDiete) {
-        diete = JSON.parse(storedDiete);
-    }
-}
-
 window.onload = function () {
     loadListFromStorage();
-    loadDieteFromStorage();
-    updateInputsForSelectedDay();
 };
-
 
 
 var itemList = [];
